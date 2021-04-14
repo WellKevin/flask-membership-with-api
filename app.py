@@ -16,12 +16,6 @@ connection = pymysql.connect(host=os.environ.get('CLEARDB_DATABASE_HOST'),
                             db=os.environ.get('CLEARDB_DATABASE_DB'),
                             charset='utf8mb4',
                             cursorclass=pymysql.cursors.DictCursor)
-#connection = pymysql.connect(host="127.0.0.1",
-#                             user="root",
-#                             password="nn101586501",
-#                             db="website",
-#                             charset='utf8mb4',
-#                             cursorclass=pymysql.cursors.DictCursor)
 
 
 @app.route("/", methods=['GET', 'POST'])
